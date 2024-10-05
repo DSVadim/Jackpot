@@ -1,0 +1,30 @@
+@import "_mixin";
+@import "_reset";
+@import "_vars";
+.baner{
+  background-image: url("../img/BACKGROUND.png");
+}
+.header {
+  @include Flex(row, center, space-around, 15px);
+  .logo{
+    color: $main-color;
+  }
+  .nav {
+    &-list {
+      @include Flex(row, center, center, 25px);
+      &-item {
+        @include Flex(row, center, center, 10px);
+        &__link {
+          color: $main-color;
+        }
+      }
+      &-btn{
+        padding: 7px 26px;
+        border-radius: 30px;
+        border-color: #6C00D2;
+        background-color: $button-color;
+        color: $main-color;
+      }
+    }
+  }
+}
