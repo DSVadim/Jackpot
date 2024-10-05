@@ -5,25 +5,95 @@
   background-image: url("../img/BACKGROUND.png");
 }
 .header {
-  @include Flex(row, center, space-around, 15px);
-  .logo{
-    color: $main-color;
-  }
-  .nav {
-    &-list {
-      @include Flex(row, center, center, 25px);
-      &-item {
-        @include Flex(row, center, center, 10px);
-        &__link {
+  .container1{
+    @include Flex(row, center, space-around, 15px);
+    .logo{
+      color: $main-color;
+    }
+    .nav {
+      &-list {
+        @include Flex(row, center, center, 25px);
+        &-item {
+          @include Flex(row, center, center, 10px);
+          &__link {
+            color: $main-color;
+          }
+        }
+        &-btn{
+          @include ChakraPetch(18px,700,25px);
+          padding: 14px 26px;
+          border-radius: 30px;
+          border-color: #6C00D2;
+          background-color: $button-color;
           color: $main-color;
         }
       }
-      &-btn{
-        padding: 7px 26px;
-        border-radius: 30px;
-        border-color: #6C00D2;
-        background-color: $button-color;
+    }
+  }
+  .container2{
+    @include Flex(column,center,center,15px);
+    &-block{
+      &__title{
+        @include ChakraPetch(63px,700,100px);
+        color: $button-color;
+        text-align: left;
+        text-transform: capitalize;
+        -webkit-text-stroke: 3px #FFFFFF;
+      }
+      &__font{
+        background-image: url("../img/45000.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-left: 90px;
+        &__text {
+          color: $main-color;
+          @include ChakraPetch(56px, 700, 97px);
+        }
+      }
+      &__contract{
         color: $main-color;
+        @include Roboto(22px,500,100px);
+      }
+    }
+  }
+  .container3{
+    @include Flex(row,center,space-around,15px);
+    &-block1{
+      @include Flex(column,flex-start,flex-start,15px);
+      &__title{
+        @include ChakraPetch(63px,700,77px);
+        color: $main-color;
+      }
+      &-number{
+        @include Flex(row,center,center,15px);
+        &-minuts{
+          &__num{
+            @include ChakraPetch(40px,600,32px);
+            color: $main-color;
+            border: #6C00D2;
+          }
+          &__txt{
+            @include Roboto(18px,400,15px);
+            color: $main-color;
+          }
+        }
+        &__point{
+          margin-top: 9px;
+          color: $main-color;
+          @include Roboto(35px,600,77px);
+        }
+        &__text{
+          color: $main-color;
+          @include Roboto(35px,600,77px);
+        }
+      }
+      &-timer{
+        @include Flex(row,center,space-between,15px);
+        width: 100%;
+        &__text{
+          @include Roboto(18px ,500,25px);
+          color:$main-color;
+        }
       }
     }
   }
