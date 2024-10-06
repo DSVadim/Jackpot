@@ -4,10 +4,22 @@
 .baner{
   background-image: url("../img/BACKGROUND.png");
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.button{
+  @include ChakraPetch(18px,700,25px);
+  border-radius: 30px;
+  border-color: #6C00D2;
+  background-color: $button-color;
+  color: $main-color;
+}
 .header {
   .container1{
     @include Flex(row, center, space-around, 15px);
-    .logo{
+    .logo {
       color: $main-color;
     }
     .nav {
@@ -20,12 +32,7 @@
           }
         }
         &-btn{
-          @include ChakraPetch(18px,700,25px);
           padding: 14px 26px;
-          border-radius: 30px;
-          border-color: #6C00D2;
-          background-color: $button-color;
-          color: $main-color;
         }
       }
     }
@@ -57,6 +64,7 @@
     }
   }
   .container3{
+    padding-bottom: 50px;
     @include Flex(row,center,space-around,15px);
     &-block1{
       @include Flex(column,flex-start,flex-start,15px);
@@ -67,13 +75,17 @@
       &-number{
         @include Flex(row,center,center,15px);
         &-minuts{
+          @include Flex(column,center,center,0px);
           &__num{
+            padding: 25px;
+            border: 2px solid transparent;
+            border-image:  linear-gradient(#EA4835 , #7000D3);
+            border-image-slice: 1;
             @include ChakraPetch(40px,600,32px);
             color: $main-color;
-            border: #6C00D2;
           }
-          &__txt{
-            @include Roboto(18px,400,15px);
+          &__txt {
+            @include Roboto(18px, 400, 15px);
             color: $main-color;
           }
         }
@@ -93,6 +105,121 @@
         &__text{
           @include Roboto(18px ,500,25px);
           color:$main-color;
+        }
+      }
+      &__btn{
+        @include Flex(row,center,center,15px);
+        padding: 10px 15px;
+      }
+    }
+    &-form{
+      @include Flex(column,center,center,50px);
+      width: 30%;
+      padding: 10px 15px;
+      background-color: #7000D375;
+      border-radius: 8px;
+     &__title{
+       display: flex;
+       justify-self: center;
+       align-self: center;
+       @include ChakraPetch(33px,600,25px);
+       color: $main-color;
+     }
+      &-block1{
+        width: 100%;
+        @include Flex(column,flex-start,flex-start,15px);
+        &-info{
+          @include Flex(row,center,flex-start,15px);
+          &__text{
+            @include Roboto(18px,600,25px);
+            color: $main-color;
+          }
+        }
+        &-input {
+          width: 90%;
+          &__in {
+            background-color: $background-color;
+            border-radius: 30px;
+            border: 2px solid transparent;
+            border-image: linear-gradient(#EA4835, #7000D3);
+            border-image-slice: 1;
+            padding: 10px 15px;
+            width: 100%;
+          }
+
+          &-value {
+            @include Flex(row, center, space-between, 0px);
+            &__text {
+              color: #CDC6FF;
+              @include Roboto(18px, 400, 25px);
+            }
+          }
+        }
+      }
+      &__btn{
+        padding: 10px 15px;
+      }
+      &__txt{
+        color: #CDC6FF;
+        @include Roboto(18px,500,25px);
+      }
+    }
+  }
+}
+.main{
+  background-color: $background-color;
+  .section2 {
+    @include Flex(row,center,space-around,0px);
+    &-block1 {
+      &__title {
+        color: #EB4834;
+        @include ChakraPetch(35px, 700, 45.5px);
+        padding-bottom: 25px;
+        &--white {
+          color: $main-color;
+        }
+      }
+      &-card{
+        background-color: #220970;
+        border-radius: 15px;
+        padding:0 25px;
+        @include Flex(row,center,center,15px);
+        &__img{
+
+        }
+        &-txt{
+          @include Flex(column,center,center,15px);
+          border-right: 2px solid transparent;
+          border-image: linear-gradient(#EA4835, #7000D3);
+          border-image-slice: 1;
+          padding: 10px 40px 0 10px;
+          &__text{
+            @include Roboto(21px,500,25px);
+            color: $main-color;
+          }
+          &__text1{
+            @include Roboto(25px,500,25px);
+            color: #EA4834;
+          }
+        }
+       &-price{
+         @include Flex(column,flex-start,flex-start,15px);
+         &__text{
+           @include Roboto(19px,500,25px);
+           @include Flex(row,center,center,5px);
+           color: #CDC6FF;
+         }
+       }
+      }
+    }
+
+    &-block2 {
+      &__title {
+        color: #EB4834;
+        @include ChakraPetch(35px, 700, 45.5px);
+        padding-bottom: 25px;
+        &--white {
+          color: $main-color;
         }
       }
     }

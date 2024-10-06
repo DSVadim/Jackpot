@@ -78,6 +78,21 @@ legend {
 .baner {
   background-image: url("../img/BACKGROUND.png"); }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.button {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  border-radius: 30px;
+  border-color: #6C00D2;
+  background-color: #7400D3;
+  color: #ffffff; }
+
 .header .container1 {
   display: flex;
   flex-direction: row;
@@ -101,15 +116,7 @@ legend {
       .header .container1 .nav-list-item__link {
         color: #ffffff; }
     .header .container1 .nav-list-btn {
-      font-family: 'Chakra Petch', sans-serif;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 25px;
-      padding: 14px 26px;
-      border-radius: 30px;
-      border-color: #6C00D2;
-      background-color: #7400D3;
-      color: #ffffff; }
+      padding: 14px 26px; }
 
 .header .container2 {
   display: flex;
@@ -145,6 +152,7 @@ legend {
     line-height: 100px; }
 
 .header .container3 {
+  padding-bottom: 50px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -168,19 +176,28 @@ legend {
       align-items: center;
       justify-content: center;
       gap: 15px; }
-      .header .container3-block1-number-minuts__num {
-        font-family: 'Chakra Petch', sans-serif;
-        font-size: 40px;
-        font-weight: 600;
-        line-height: 32px;
-        color: #ffffff;
-        border: #6C00D2; }
-      .header .container3-block1-number-minuts__txt {
-        font-family: 'Roboto', sans-serif;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 15px;
-        color: #ffffff; }
+      .header .container3-block1-number-minuts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0px; }
+        .header .container3-block1-number-minuts__num {
+          padding: 25px;
+          border: 2px solid transparent;
+          border-image: linear-gradient(#EA4835, #7000D3);
+          border-image-slice: 1;
+          font-family: 'Chakra Petch', sans-serif;
+          font-size: 40px;
+          font-weight: 600;
+          line-height: 32px;
+          color: #ffffff; }
+        .header .container3-block1-number-minuts__txt {
+          font-family: 'Roboto', sans-serif;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 15px;
+          color: #ffffff; }
       .header .container3-block1-number__point {
         margin-top: 9px;
         color: #ffffff;
@@ -206,4 +223,154 @@ legend {
         font-size: 18px;
         font-weight: 500;
         line-height: 25px;
+        color: #ffffff; }
+    .header .container3-block1__btn {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px 15px; }
+  .header .container3-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 30%;
+    padding: 10px 15px;
+    background-color: #7000D375;
+    border-radius: 8px; }
+    .header .container3-form__title {
+      display: flex;
+      justify-self: center;
+      align-self: center;
+      font-family: 'Chakra Petch', sans-serif;
+      font-size: 33px;
+      font-weight: 600;
+      line-height: 25px;
+      color: #ffffff; }
+    .header .container3-form-block1 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 15px; }
+      .header .container3-form-block1-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 15px; }
+        .header .container3-form-block1-info__text {
+          font-family: 'Roboto', sans-serif;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 25px;
+          color: #ffffff; }
+      .header .container3-form-block1-input {
+        width: 90%; }
+        .header .container3-form-block1-input__in {
+          background-color: #230361;
+          border-radius: 30px;
+          border: 2px solid transparent;
+          border-image: linear-gradient(#EA4835, #7000D3);
+          border-image-slice: 1;
+          padding: 10px 15px;
+          width: 100%; }
+        .header .container3-form-block1-input-value {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          gap: 0px; }
+          .header .container3-form-block1-input-value__text {
+            color: #CDC6FF;
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25px; }
+    .header .container3-form__btn {
+      padding: 10px 15px; }
+    .header .container3-form__txt {
+      color: #CDC6FF;
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 25px; }
+
+.main {
+  background-color: #230361; }
+  .main .section2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0px; }
+    .main .section2-block1__title {
+      color: #EB4834;
+      font-family: 'Chakra Petch', sans-serif;
+      font-size: 35px;
+      font-weight: 700;
+      line-height: 45.5px;
+      padding-bottom: 25px; }
+      .main .section2-block1__title--white {
+        color: #ffffff; }
+    .main .section2-block1-card {
+      background-color: #220970;
+      border-radius: 15px;
+      padding: 0 25px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 15px; }
+      .main .section2-block1-card-txt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        border-right: 2px solid transparent;
+        border-image: linear-gradient(#EA4835, #7000D3);
+        border-image-slice: 1;
+        padding: 10px 40px 0 10px; }
+        .main .section2-block1-card-txt__text {
+          font-family: 'Roboto', sans-serif;
+          font-size: 21px;
+          font-weight: 500;
+          line-height: 25px;
+          color: #ffffff; }
+        .main .section2-block1-card-txt__text1 {
+          font-family: 'Roboto', sans-serif;
+          font-size: 25px;
+          font-weight: 500;
+          line-height: 25px;
+          color: #EA4834; }
+      .main .section2-block1-card-price {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 15px; }
+        .main .section2-block1-card-price__text {
+          font-family: 'Roboto', sans-serif;
+          font-size: 19px;
+          font-weight: 500;
+          line-height: 25px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          gap: 5px;
+          color: #CDC6FF; }
+    .main .section2-block2__title {
+      color: #EB4834;
+      font-family: 'Chakra Petch', sans-serif;
+      font-size: 35px;
+      font-weight: 700;
+      line-height: 45.5px;
+      padding-bottom: 25px; }
+      .main .section2-block2__title--white {
         color: #ffffff; }
