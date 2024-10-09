@@ -318,15 +318,22 @@ legend {
       .main .section2-block1__title--white {
         color: #ffffff; }
     .main .section2-block1-card {
+      position: relative;
       background-color: #220970;
       border-radius: 15px;
-      padding: 0 25px;
+      border: 1px solid #EA4834;
+      padding: 25px 25px;
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center;
       gap: 15px; }
+      .main .section2-block1-card__img {
+        position: absolute;
+        top: 15px;
+        left: 10px; }
       .main .section2-block1-card-txt {
+        margin-left: 170px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -374,3 +381,79 @@ legend {
       padding-bottom: 25px; }
       .main .section2-block2__title--white {
         color: #ffffff; }
+  .main .section3 {
+    padding-top: 50px;
+    background-image: url("../img/how-works-bg.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; }
+    .main .section3__title {
+      font-family: 'Chakra Petch', sans-serif;
+      font-size: 55px;
+      font-weight: 700;
+      line-height: 71.5px;
+      color: #EA4834; }
+      .main .section3__title--white {
+        color: #ffffff; }
+    .main .section3-cards {
+      padding: 15px 150px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-around;
+      gap: 0px; }
+      .main .section3-cards-card {
+        padding: 15px 25px;
+        background-color: #230361;
+        text-align: center;
+        width: 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px; }
+        .main .section3-cards-card__txt {
+          font-family: 'Roboto', sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 32px;
+          color: #ffffff; }
+  .main .section4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-image: url("../img/overview.png"); }
+    .main .section4__title {
+      font-family: 'Chakra Petch', sans-serif;
+      font-size: 55px;
+      font-weight: 700;
+      line-height: 71.5px;
+      color: #EA4834; }
+      .main .section4__title--white {
+        color: #ffffff; }
+    .main .section4-block {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 50px; }
+      .main .section4-block-1 {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px; }
+        .main .section4-block-1__text {
+          font-family: 'Roboto', sans-serif;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 40px;
+          color: #CDC6FF;
+          border-left: 2px solid transparent;
+          border-image: linear-gradient(#EA4835, #7000D3);
+          border-image-slice: 1; }

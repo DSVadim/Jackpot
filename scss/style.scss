@@ -180,14 +180,19 @@
         }
       }
       &-card{
+        position: relative;
         background-color: #220970;
         border-radius: 15px;
-        padding:0 25px;
+        border: 1px solid #EA4834;
+        padding:25px 25px;
         @include Flex(row,center,center,15px);
         &__img{
-
+        position: absolute;
+          top: 15px;
+          left: 10px;
         }
         &-txt{
+          margin-left: 170px;
           @include Flex(column,center,center,15px);
           border-right: 2px solid transparent;
           border-image: linear-gradient(#EA4835, #7000D3);
@@ -221,6 +226,62 @@
         &--white {
           color: $main-color;
         }
+      }
+    }
+  }
+  .section3{
+    padding-top: 50px;
+    background-image: url("../img/how-works-bg.png");
+    @include Flex(column,center,center,15px);
+    &__title{
+      @include ChakraPetch(55px,700,71.5px);
+      color: #EA4834;
+      &--white{
+        color: $main-color;
+      }
+    }
+    &-cards{
+      padding: 15px 150px;
+      @include Flex(row,flex-start,space-around,0px);
+      &-card{
+        padding: 15px 25px;
+        background-color: $background-color;
+        text-align: center;
+        width: 15%;
+        @include Flex(column,center,center,5px);
+        &__txt{
+          @include Roboto(16px,400,32px);
+          color: $main-color;
+        }
+      }
+    }
+  }
+  .section4{
+    @include Flex(column,center,center, 15px);
+    background-image: url("../img/overview.png");
+    &__title{
+      @include ChakraPetch(55px,700,71.5px);
+      color: #EA4834;
+      &--white{
+        color: $main-color;
+      }
+    }
+    &-block {
+      @include Flex(row,center,center,50px);
+      &-1 {
+        width: 30%;
+        @include Flex(column,center,center,25px);
+        &__text {
+          @include Roboto(20px, 500, 40px);
+          color: #CDC6FF;
+          border-left: 2px solid transparent;
+          border-image: linear-gradient(#EA4835, #7000D3);
+          border-image-slice: 1;
+        }
+      }
+
+      &-2 {
+
       }
     }
   }
