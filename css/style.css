@@ -31,9 +31,6 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: inherit;
   font-weight: inherit; }
 
-ul, ul li {
-  list-style: none; }
-
 img {
   vertical-align: top; }
 
@@ -272,11 +269,9 @@ legend {
       .header .container3-form-block1-input {
         width: 90%; }
         .header .container3-form-block1-input__in {
-          background-color: #230361;
+          background-color: #280b70;
           border-radius: 30px;
-          border: 2px solid transparent;
-          border-image: linear-gradient(#EA4835, #7000D3);
-          border-image-slice: 1;
+          border: 2px solid #EA4834;
           padding: 10px 15px;
           width: 100%; }
         .header .container3-form-block1-input-value {
@@ -301,7 +296,7 @@ legend {
       line-height: 25px; }
 
 .main {
-  background-color: #230361; }
+  background-color: #280b70; }
   .main .section2 {
     display: flex;
     flex-direction: row;
@@ -406,7 +401,7 @@ legend {
       gap: 0px; }
       .main .section3-cards-card {
         padding: 15px 25px;
-        background-color: #230361;
+        background-color: #280b70;
         text-align: center;
         width: 15%;
         display: flex;
@@ -454,6 +449,178 @@ legend {
           font-weight: 500;
           line-height: 40px;
           color: #CDC6FF;
+          padding-left: 15px;
           border-left: 2px solid transparent;
           border-image: linear-gradient(#EA4835, #7000D3);
           border-image-slice: 1; }
+      .main .section4-block-2 {
+        padding-left: 150px; }
+  .main .section5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; }
+    .main .section5-block1 {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-around;
+      gap: 55px; }
+    .main .section5__title {
+      font-family: 'Chakra Petch', sans-serif;
+      font-size: 55px;
+      font-weight: 700;
+      line-height: 71.5px;
+      color: #EA4834; }
+      .main .section5__title--white {
+        color: #ffffff; }
+    .main .section5-container1 {
+      background-color: #3e2085;
+      padding: 45px 65px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 25px; }
+      .main .section5-container1-texts {
+        padding-left: 25px; }
+        .main .section5-container1-texts__title {
+          font-family: 'Chakra Petch', sans-serif;
+          font-size: 33px;
+          font-weight: 600;
+          line-height: 25px;
+          color: #ffffff; }
+        .main .section5-container1-texts-list__text {
+          font-family: 'Roboto', sans-serif;
+          font-size: 21px;
+          font-weight: 500;
+          line-height: 55px;
+          color: #ffffff; }
+  .main .section6 {
+    padding: 150px 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 50px; }
+    .main .section6-block1 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 15px;
+      width: 30%; }
+      .main .section6-block1__title {
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 58.5px;
+        color: #EA4834; }
+        .main .section6-block1__title--white {
+          color: #ffffff; }
+      .main .section6-block1__text {
+        color: #CDC6FF;
+        font-family: 'Roboto', sans-serif;
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 29px; }
+      .main .section6-block1-list {
+        margin-left: 20px; }
+        .main .section6-block1-list__text {
+          color: #CDC6FF; }
+  .main .section7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; }
+    .main .section7-block {
+      background-image: linear-gradient(to right, #7000D3, #280B70);
+      width: 65%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 0px; }
+      .main .section7-block-texts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 15px; }
+        .main .section7-block-texts__title {
+          font-family: 'Chakra Petch', sans-serif;
+          font-size: 45px;
+          font-weight: 700;
+          line-height: 64px;
+          color: #ffffff; }
+        .main .section7-block-texts__text {
+          font-family: 'Roboto', sans-serif;
+          font-size: 40px;
+          font-weight: 400;
+          line-height: 58px;
+          color: #ffffff; }
+        .main .section7-block-texts-inputs {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 0px; }
+          .main .section7-block-texts-inputs__input {
+            color: #ffffff;
+            border-radius: 30px;
+            padding: 15px 205px; }
+          .main .section7-block-texts-inputs__btn {
+            padding: 5px 15px;
+            margin-left: -140px; }
+
+.footer {
+  margin-top: -150px;
+  z-index: -1;
+  background-image: url("../img/footer-bg.png");
+  background-color: #280b70; }
+  .footer-block {
+    padding-top: 250px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px; }
+    .footer-block-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 15px; }
+      .footer-block-list__title {
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 31.26px;
+        color: #ffffff; }
+      .footer-block-list-item__link {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20.84px;
+        color: #ffffff; }
+  .footer-block2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    text-align: center; }
+    .footer-block2__aftertext {
+      padding-top: 25px;
+      border-top: 2px solid #FFFFFF1A;
+      width: 84%;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+      color: #CDC6FF; }
